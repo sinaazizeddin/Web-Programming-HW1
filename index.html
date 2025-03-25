@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاسبه‌گر پویا</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>محاسبه‌گر پویا</h2>
+        <label>قیمت واحد: <input type="text" id="fee" placeholder="قیمت واحد"></label>
+        <label>تعداد: <input type="text" id="count" placeholder="تعداد"></label>
+        <label>تخفیف: <input type="text" id="discount" placeholder="تخفیف"></label>
+        <formula evaluator="count*fee-discount"></formula>
+
+        <label>طول: <input type="text" id="length" placeholder="طول"></label>
+        <label>عرض: <input type="text" id="width" placeholder="عرض"></label>
+        <formula evaluator="length*width"></formula>
+
+        <label>عدد اول: <input type="text" id="num1" placeholder="عدد اول"></label>
+        <label>عدد دوم: <input type="text" id="num2" placeholder="عدد دوم"></label>
+        <formula evaluator="num1+num2"></formula>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
